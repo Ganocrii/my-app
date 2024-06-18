@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
   }
   
   .form-background::before {
@@ -24,7 +24,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 90%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: -1; /* Затемнение поверх фона */
@@ -116,3 +116,12 @@
     width: 100%; /* Возвращаем ширину селектов */
   }
   
+  @media (max-width: 600px) {
+    .form-container form {
+        padding: 15px;
+    }
+    
+    .business-type-buttons button {
+        padding: 8px 16px;
+    }
+}
